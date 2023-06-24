@@ -1,0 +1,63 @@
+body{
+  background-repeat: no-repeat; 
+  padding: 10px;
+  margin: 0px;
+  text-align: justify;
+}
+
+p:first-letter {
+  margin-left:15px;
+}
+
+h1{
+  text-align: center;
+  text-transform: uppercase;
+}
+
+h2, h3{
+  font-style: italic;
+}
+
+
+#jobbra{
+  float: right;
+  text-align: center;
+  margin: 10px;
+  padding: 10px;
+  font-style: italic;
+  font-size: 0.7em;  
+  border: #FF0000 1px solid;
+  background-color: #ffffff;
+  
+}
+
+img {
+  width: 400px;  
+}
+
+.kerdeskep{
+  float: left;
+  margin-right: 20px;
+  width: 222px;
+}
+
+a{
+  color:red;
+}
+
+body {
+  background-image: url(./big-graph.png);
+  background-position: center top;
+  
+}
+
+#kur {
+  font-style: italic;
+  font-weight: bold;
+  text-decoration: none;  
+}
+
+#eredmeny {
+  color: black;
+  font-weight: bold;
+}

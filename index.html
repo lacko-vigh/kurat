@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<meta name="Description" content="Enter your description here"/>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.0/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+<link rel="stylesheet" href="tgrafok.css">
+<title>Teljes gráfok</title>
+</head>
+<body>
+    <h1>Teljes gráfok</h1>
+    <h2>Bevezetés</h2>
+        <div id="jobbra">
+            <p>
+                <img src="k1-4.png" alt="" srcset=""><br>
+                <img src="k5-8.png" alt="" srcset="">   
+            </p>
+            <p>Az első 8 teljes gráf ábrája</p>
+        </div>
+        <p>
+            Gráfnak nevezzük pontoknak és éleknek a halmazát, 
+            ahol az élek pontokat kötnek össze, illetve az élekre pontok 
+            illeszkednek úgy, hogy minden élre legalább egy, legfeljebb két pont illeszkedik.     
+        </p>
+        <p>
+            A gráfokpontjait egyszerűen pontoknak nevezzük, de használatos a csúcspont (csúcs), 
+            szögpont elnevezés is.     
+        </p>
+        <p>
+            Ha egy élre két pont illeszkedik, akkor azt mondjuk, hogy az az 
+            él két pontot köt össze. Megtörténhet, hogy ugyanazt a két pontot kettő vagy több él köti 
+            össze, akkor ezeket párhuzamos (vagy többszörös) éleknek nevezzük. Ha egy élre egy pont 
+            illeszkedik, azaz egy él végpontja azonos, akkor azt az élt hurokélnek nevezzük. Ha egy 
+            gráfban nincsenek párhuzamos élek és nincs hurokél, akkor azt egyszerű gráfnak nevezzük.
+        </p>
+        <h2>Teljes gráfok</h2>    
+            <p>
+                Ha egy gráfnak mindegyik pontjából pontosan egy-egy él vezet a gráf összes többi 
+                pontjához, akkor azt teljes gráfnak nevezzük. Az n csúcsú teljes gráfot K<sub>n</sub>-nel jelöljük 
+                <a href="./Kuratowski.jpeg" id="kur" target="_blank">Kazimierz Kuratowski</a> lengyel matematikus emlékére.
+                K<sub>n</sub> tulajdonságai:
+                <ul>
+                    <li>
+                        Minden csúcsának fokszáma: <em>n-1</em>
+                    </li>
+                    <li>
+                        Az élek száma: <em>[n*(n-1)]/2</em>        
+                    </li>
+                </ul>
+            </p>
+        
+            <h2>Villámkérdés</h2>
+            <img class="kerdeskep" src="k10.png" alt="">
+        <h3>Hány éle van a képen látható teljes gráfnak?</h3>        
+        <input id="35" type="radio" name="1">35 <br>
+        <input id="45" type="radio" name="1">45 <br>
+        <input id="55" type="radio" name="1">55 <br>
+        <input id="65" type="radio" name="1">65 <br>       
+        <input type="submit" value="Ellenőrizzük le!" onclick="answer()">
+        
+        <p>Eredmény: 
+            <span id="eredmeny"></span>
+        </p>
+<script src="script.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.9.2/umd/popper.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.0/js/bootstrap.min.js"></script>
+</body>
+</html>
